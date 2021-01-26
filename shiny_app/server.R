@@ -15,7 +15,7 @@ server <- function(input, output, session) {
 
     # Read in the specified chapter
     chapter_num <- readr::parse_number(input$chosen_chapter)
-    selected_chapter_text <- readLines(paste0("../chapter_files/", input$chosen_chapter))
+    selected_chapter_text <- readLines(paste0("chapter_files/", input$chosen_chapter))
     # Remove dashes from specified chapter
     selected_chapter_text <- remove_dashes(selected_chapter_text)
 
@@ -51,7 +51,7 @@ server <- function(input, output, session) {
 
     # Read in the specified chapter
     chapter_num <- readr::parse_number(input$chosen_chapter)
-    selected_chapter_text <- readLines(paste0("../chapter_files/", input$chosen_chapter))
+    selected_chapter_text <- readLines(paste0("chapter_files/", input$chosen_chapter))
     # Remove dashes from specified chapter
     selected_chapter_text <- remove_dashes(selected_chapter_text)
 
@@ -64,7 +64,7 @@ server <- function(input, output, session) {
   max_line_number <- reactive({
     # Read in the specified chapter
     chapter_num <- readr::parse_number(input$chosen_chapter)
-    selected_chapter_text <- readLines(paste0("../chapter_files/", input$chosen_chapter))
+    selected_chapter_text <- readLines(paste0("chapter_files/", input$chosen_chapter))
     # Remove dashes from specified chapter
     selected_chapter_text <- remove_dashes(selected_chapter_text)
     # return number of lines in the chapter

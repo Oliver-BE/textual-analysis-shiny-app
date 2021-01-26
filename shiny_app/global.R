@@ -3,7 +3,7 @@ library(shiny)
 
 # Initial code -----------------------------------------------------------------
 # generate
-location <- "../chapter_files/"
+location <- "chapter_files/"
 chapter_names <- list.files(location)
 
 # a function to remove dashes from the ends of line (and combine the truncated words)
